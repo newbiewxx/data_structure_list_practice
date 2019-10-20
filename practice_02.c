@@ -23,7 +23,7 @@ void MergeList(LinkList &La, LinkList &Lb, LinkList &Lc)
 	pa = La->next; // pa是La的工作指针，初始化为首元结点
 	pb = Lb->next; // pb是La的工作指针，初始化为首元结点
 	Lc = pc = La;  // 将La的头结点作为Lc的头结点
-	Lc-next = NULL;  // 利用前插法
+	Lc->next = NULL;  // 利用前插法
 
 	while (pa || pb) { // 只要有一个表未达到表尾结点
 		if (!pa) {   // 当La为空时，用q指向 pb,pb指针后移
