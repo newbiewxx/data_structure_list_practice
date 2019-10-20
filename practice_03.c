@@ -19,7 +19,7 @@ void Intersection(LinkList &La, LinkList &Lb, LinkList &Lc)
 	pb = Lb->next; // pb是链表Lb的工作指针，初始化为首元结点
 	Lc = pc = La;  // 将La的头结点作为Lc的头结点
 
-	while (pa && pb)    // 当La 和 Lb均为到达尾结点
+	while (pa && pb)    // 当La 和 Lb均未到达尾结点
 	{
 		if (pa->next == pb->next)   // 相等，交集并入结果集中
 		{
@@ -56,5 +56,5 @@ void Intersection(LinkList &La, LinkList &Lb, LinkList &Lc)
 		delete u;
 	}
 	pc->next = UNLL;   // 置链表Lc为尾标志
-	delete Lb;
+	delete Lb;    // 释放Lb的头指针
 }
