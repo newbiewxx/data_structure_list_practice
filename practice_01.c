@@ -21,7 +21,7 @@ void MergeList(LinkList &La, LinkList &Lb, LinkList &Lc)
 	pb = Lb->next; // pb是链表Lb的工作指针，初始化为首元结点
 	Lc = pc = La;  // 将La的头结点作为Lc的头结点
 
-	while (pa && pb) {   // 当La 和 Lb均为到达尾结点
+	while (pa && pb) {   // 当La 和 Lb均未到达尾结点
 
 		if (pa->data < pb->data) {
 			// 取较小者中La中的元素，将pa连接在pc的后面， pa的指针后移
