@@ -12,7 +12,7 @@
 */
 
 // 将两个递增的有序链表La 和 Lb 合并为一个递增的有序链表Lc
-void MergeList(LinkList &La, LinkList &Lb, LinkList &Lc)
+void Intersection(LinkList &La, LinkList &Lb, LinkList &Lc)
 {
 
 	pa = La->next; // pa是链表La的工作指针，初始化为首元结点
