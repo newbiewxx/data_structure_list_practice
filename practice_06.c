@@ -23,7 +23,7 @@ ElemType Max(LinkList &A)
 
 	while (p != NULL)  // 遍历结点，如果下一节点存在
 	{
-		if (pa->data > pmax->data) // 如果后者大于前者，将最大值结点给后者
+		if (p->data > pmax->data) // 如果后者大于前者，将最大值结点给后者
 		{
 			pmax = p;
 			p = p->next;   // 指针后移
