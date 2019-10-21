@@ -31,7 +31,7 @@ void Difference(LinkList &La, LinkList $Lb, int &n)
 		else if (pa->data > pb->data) // B链表后移
 		{
 			pb = pb->next;
-  	}
+  		}
 		else  // 相等时
 		{
 			pre->next = pa->next;
