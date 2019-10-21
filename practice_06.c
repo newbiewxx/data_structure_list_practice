@@ -33,5 +33,5 @@ ElemType Max(LinkList &A)
 			p = p->next; // 后移继续遍历
 		}
 	}
-	return pamx->data;  // 返回最大数据域
+	return pmax->data;  // 返回最大数据域
 }
