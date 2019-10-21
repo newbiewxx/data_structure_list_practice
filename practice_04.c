@@ -18,7 +18,7 @@
 void Difference(LinkList &La, LinkList $Lb, int &n)
 {	
 	pa = La->next;  // pa是链La的工作指针，初始化为首元结点
-  pb = Lb->next;  // pb是链Lb的工作指针，初始化为首元结点
+  	pb = Lb->next;  // pb是链Lb的工作指针，初始化为首元结点
 	pre = La;
 
 	while (pa && pb) { // La 和 Lb链表均不为空
